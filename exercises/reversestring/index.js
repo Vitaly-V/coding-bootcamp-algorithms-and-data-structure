@@ -24,7 +24,7 @@
 
 function reverse(str) {
   let reversed = '';
-  for(char of str) {
+  for(let char of str) {
     reversed = char + reversed;
   }
   return reversed;
