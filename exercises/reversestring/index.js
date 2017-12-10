@@ -13,13 +13,21 @@
     .join('');
 }*/
 
-function reverse(str) {
+/*function reverse(str) {
   const strArr = str.split('');
   let reversedArr = [];
   strArr.forEach(v => {
     reversedArr.unshift(v);
   });
   return reversedArr.join('');
+}*/
+
+function reverse(str) {
+  let reversed = '';
+  for(char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
 }
 
 module.exports = reverse;
