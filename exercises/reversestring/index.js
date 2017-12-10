@@ -22,12 +22,16 @@
   return reversedArr.join('');
 }*/
 
-function reverse(str) {
+/*function reverse(str) {
   let reversed = '';
-  for(let char of str) {
+  for (let char of str) {
     reversed = char + reversed;
   }
   return reversed;
+}*/
+
+function reverse(str) {
+  return str.split('').reduce((reversed, char) => char + reversed, '');
 }
 
 module.exports = reverse;
